@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="DrawDICOMObject">
+</Property><Property Name="方案檔" Value="D:\Codes\CSharpWindowApp\DrawDICOMObject20110329\DrawDICOMObject.sln">
+</Property><Property Name="使用者選項檔" Value="D:\Codes\CSharpWindowApp\DrawDICOMObject20110329\DrawDICOMObject.suo">
+</Property><Property Name="Date" Value="2013年2月7日">
+</Property><Property Name="Time" Value="上午 08:40">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="DrawDICOMObject.sln" Description="檔案已成功備份為 D:\Codes\CSharpWindowApp\DrawDICOMObject20110329\Backup\DrawDICOMObject.sln">
+</Event><Event ErrorLevel="0" Project="" Source="DrawDICOMObject.suo" Description="檔案已成功備份為 D:\Codes\CSharpWindowApp\DrawDICOMObject20110329\Backup\DrawDICOMObject.suo">
+</Event><Event ErrorLevel="0" Project="DrawDICOMObject" Source="DrawDICOMObject.csproj" Description="專案檔已成功備份為 D:\Codes\CSharpWindowApp\DrawDICOMObject20110329\Backup\DrawDICOMObject.csproj">
+</Event><Event ErrorLevel="0" Project="DrawDICOMObject" Source="Form1.cs" Description="檔案已成功備份為 D:\Codes\CSharpWindowApp\DrawDICOMObject20110329\Backup\Form1.cs">
+</Event><Event ErrorLevel="0" Project="DrawDICOMObject" Source="Form1.Designer.cs" Description="檔案已成功備份為 D:\Codes\CSharpWindowApp\DrawDICOMObject20110329\Backup\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="DrawDICOMObject" Source="Program.cs" Description="檔案已成功備份為 D:\Codes\CSharpWindowApp\DrawDICOMObject20110329\Backup\Program.cs">
+</Event><Event ErrorLevel="0" Project="DrawDICOMObject" Source="Properties\AssemblyInfo.cs" Description="檔案已成功備份為 D:\Codes\CSharpWindowApp\DrawDICOMObject20110329\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="DrawDICOMObject" Source="Properties\Resources.Designer.cs" Description="檔案已成功備份為 D:\Codes\CSharpWindowApp\DrawDICOMObject20110329\Backup\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="DrawDICOMObject" Source="Properties\Settings.Designer.cs" Description="檔案已成功備份為 D:\Codes\CSharpWindowApp\DrawDICOMObject20110329\Backup\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="DrawDICOMObject" Source="Properties\Settings.settings" Description="檔案已成功備份為 D:\Codes\CSharpWindowApp\DrawDICOMObject20110329\Backup\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="DrawDICOMObject" Source="Form1.resx" Description="檔案已成功備份為 D:\Codes\CSharpWindowApp\DrawDICOMObject20110329\Backup\Form1.resx">
+</Event><Event ErrorLevel="0" Project="DrawDICOMObject" Source="Properties\Resources.resx" Description="檔案已成功備份為 D:\Codes\CSharpWindowApp\DrawDICOMObject20110329\Backup\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="DrawDICOMObject" Source="DrawDICOMObject.csproj" Description="專案轉換成功">
+</Event><Event ErrorLevel="3" Project="DrawDICOMObject" Source="DrawDICOMObject.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="DrawDICOMObject.sln" Description="方案轉換成功">
+</Event><Event ErrorLevel="3" Project="" Source="DrawDICOMObject.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DrawDICOMObject" Source="DrawDICOMObject.csproj" Description="掃描完成: 專案檔不需要升級。">
+</Event></UpgradeLog>
