@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Show DICOM image</title>
+ 
+<script type="text/javascript" >
+    //Get DICOM XML tags
+    xhttp0 = new XMLHttpRequest();
+    xhttp0.open("GET", "Img/MR1.xml", false);
+    xhttp0.send();
+    xmlDoc = xhttp0.responseXML;
+    RowsStr = xmlDoc.getElementsByTagName("Tag00280010")[0].childNodes[0].nodeValue;
+    Rows = parseInt(RowsStr);
+    ColumnsStr = xmlDoc.getElementsByTagName("Tag00280011")[0].childNodes[0].nodeValue;
+    Columns = parseInt(ColumnsStr);
+    Atts = xmlDoc.getElementsByTagName("Tag7fe00010")[0].attributes;
+    OffsetStr = Atts.getNamedItem("Offset").nodeValue;
+    Offset = parseInt(OffsetStr);
+
+   // alert(Offset);
+   // alert("aaa");
+    //dataView = new DataView(buffer, byteOffset, byteLength);
+    xhttp = new XMLHttpRequest();
+    xhttp.open('GET', "Img/MR1.dcm", true);
+    xhttp.responseType = "arraybuffer";
+    var dataview;
+   // dataview = new DataView(xhttp.response);
+    xhttp.onreadystatechange = function () {
+
+        if (xhttp.readyState === 4) {
+        
+            dataview = new DataView(xhttp.response);
+         //  var data = dataview.getInt16(896);
+          // alert(dataview.byteLength);
+        }
+      
+    }
+    xhttp.send();
+    WindowCenter = 500;
+    WindowWidth = 1000;
+
+    function ShowImg() {
+        // alert("bbb");
+        var Max = WindowCenter + WindowWidth / 2;
+        var Min = WindowCenter - WindowWidth / 2;
+
+        var canvas = document.getElementById("Canvas");
+        var ctx = canvas.getContext("2d");
+        /*
+        alert(Rows);
+        for (var i = 0; i < 20; i++) {
+        var P2 = dataview.getUint16(Offset + i*2 , true );
+        alert(P2); }
+       
+        ctx.fillStyle = "rgb(128,0,0)";
+        ctx.fillRect(0, 0, 100, 100);
+        */
+        for (var i = 0; i < Rows; i++) {
+            var i1 = i * Rows;
+            for (var j = 0; j < Columns; j++) {
+                Offset2 = Offset + 2 * (i1 + j);
+               // alert(Offset2);
+                var PixelValue = dataview.getUint16(Offset2, true);
+               // PixelValue = 1000;
+                if (PixelValue >= Max) GrayValue = 255;
+                else if (Min > PixelValue) GrayValue = 0;
+                else GrayValue = Math.round((PixelValue - Min) / WindowWidth * 255);
+                // GrayValue = 100;
+                ctx.fillStyle = "rgb(" + GrayValue + "," + GrayValue + "," + GrayValue + ")";
+
+                //ctx.fillStyle = "rgb(128,128,0)";
+                ctx.fillRect(j, i, 1, 1);
+            }
+        }
+
+    }
+
+    function Button1_onclick() {
+        ShowImg();
+    }
+
+
+
+
+</script>
+
+    <style type="text/css">
+        #Button1
+        {
+            height: 30px;
+            width: 76px;
+        }
+    </style>
+
+</head>
+<body>
+<br />
+WindowCenter:<input size="8" id="Center"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+WindowWidth: <input size="8" id="Width"/>&nbsp;&nbsp;&nbsp;&nbsp;
+    <input id="Button1" type="button" value="button" onclick="return Button1_onclick()" /><br />
+<canvas style="background-color: black" id="Canvas" width="512" height="512" ></canvas>
+<script type="text/javascript" >
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<DDO>
+	<Tag00020000 FieldName ="Group Length"  VRName ="UL"  Length ="4"  Offset ="140" >206</Tag00020000>
+	<Tag00020001 FieldName ="File Meta Information Version"  VRName ="OB"  Length ="2"  Offset ="156" >0;1</Tag00020001>
+	<Tag00020002 FieldName ="Media Storage SOP Class UID"  VRName ="UI"  Length ="26"  Offset ="166" >1.2.840.10008.5.1.4.1.1.2</Tag00020002>
+	<Tag00020003 FieldName ="Media Storage SOP Instance UID"  VRName ="UI"  Length ="74"  Offset ="200" >1.2.826.0.1.3680043.2.105.651229.1.1.140.129.79.214.2002061716402348.75.73</Tag00020003>
+	<Tag00020010 FieldName ="Transfer Syntax UID"  VRName ="UI"  Length ="18"  Offset ="282" >1.2.840.10008.1.2</Tag00020010>
+	<Tag00020012 FieldName ="Implementation Class UID"  VRName ="UI"  Length ="18"  Offset ="308" >2.16.886.104.104.1</Tag00020012>
+	<Tag00020013 FieldName ="Implementation Version Name"  VRName ="CS"  Length ="16"  Offset ="334" >IMIS Creator 1.0</Tag00020013>
+	<Tag00080000 FieldName ="Group Length"  VRName ="UL"  Length ="4"  Offset ="358" >404</Tag00080000>
+	<Tag00080008 FieldName ="Image Type"  VRName ="CS"  Length ="16"  Offset ="370" >DERIVED\PRIMARY</Tag00080008>
+	<Tag00080016 FieldName ="SOP Class UID"  VRName ="UI"  Length ="26"  Offset ="394" >1.2.840.10008.5.1.4.1.1.2</Tag00080016>
+	<Tag00080018 FieldName ="SOP Instance UID"  VRName ="UI"  Length ="74"  Offset ="428" >1.2.826.0.1.3680043.2.105.651229.1.1.140.129.79.214.2002061716402348.75.73</Tag00080018>
+	<Tag00080020 FieldName ="Study Date"  VRName ="DA"  Length ="8"  Offset ="510" >19990319</Tag00080020>
+	<Tag00080021 FieldName ="Series Date"  VRName ="DA"  Length ="8"  Offset ="526" >20020617</Tag00080021>
+	<Tag00080023 FieldName ="Content Date"  VRName ="DA"  Length ="8"  Offset ="542" >20020617</Tag00080023>
+	<Tag00080030 FieldName ="Study Time"  VRName ="TM"  Length ="6"  Offset ="558" >193018</Tag00080030>
+	<Tag00080031 FieldName ="Series Time"  VRName ="TM"  Length ="8"  Offset ="572" >16402348</Tag00080031>
+	<Tag00080033 FieldName ="Content Time"  VRName ="TM"  Length ="8"  Offset ="588" >16402348</Tag00080033>
+	<Tag00080050 FieldName ="Accession Number"  VRName ="SH"  Length ="8"  Offset ="604" >E293511</Tag00080050>
+	<Tag00080060 FieldName ="Modality"  VRName ="CS"  Length ="2"  Offset ="620" >CT</Tag00080060>
+	<Tag00080070 FieldName ="Manufacturer"  VRName ="LO"  Length ="6"  Offset ="630" >HISCO</Tag00080070>
+	<Tag00080080 FieldName ="Institution Name"  VRName ="LO"  Length ="32"  Offset ="644" >TAIPEI VETERANS GENERAL HOSPITAL</Tag00080080>
+	<Tag00080090 FieldName ="Referring Physician!|s Name"  VRName ="PN"  Length ="0"  Offset ="684" ></Tag00080090>
+	<Tag00081010 FieldName ="Station Name"  VRName ="SH"  Length ="6"  Offset ="692" >IMIS_1</Tag00081010>
+	<Tag00081030 FieldName ="Study Description"  VRName ="LO"  Length ="6"  Offset ="706" >PELVIS</Tag00081030>
+	<Tag0008103e FieldName ="Series Description"  VRName ="LO"  Length ="10"  Offset ="720" >SAG IRpre</Tag0008103e>
+	<Tag00081060 FieldName ="Name of Physician(s) Reading Study"  VRName ="PN"  Length ="2"  Offset ="738" >S1</Tag00081060>
+	<Tag00081090 FieldName ="Manufacturer!|s Model Name"  VRName ="LO"  Length ="18"  Offset ="748" >HISCO_IM_CREACTOR</Tag00081090>
+	<Tag00100000 FieldName ="Group Length"  VRName ="UL"  Length ="4"  Offset ="774" >90</Tag00100000>
+	<Tag00100010 FieldName ="Patients Name"  VRName ="PN"  Length ="8"  Offset ="786" >SHIU-S-T</Tag00100010>
+	<Tag00100020 FieldName ="Patient ID"  VRName ="LO"  Length ="10"  Offset ="802" >2172522-4</Tag00100020>
+	<Tag00100030 FieldName ="Patient's Birth Date"  VRName ="DA"  Length ="0"  Offset ="820" ></Tag00100030>
+	<Tag00100040 FieldName ="Patient's Sex"  VRName ="CS"  Length ="2"  Offset ="828" >F</Tag00100040>
+	<Tag00101010 FieldName ="Patient's Age"  VRName ="AS"  Length ="4"  Offset ="838" >035Y</Tag00101010>
+	<Tag00101030 FieldName ="Patient's Weight"  VRName ="DS"  Length ="10"  Offset ="850" >44.000000</Tag00101030>
+	<Tag001021b0 FieldName ="Additional Patient History"  VRName ="LT"  Length ="0"  Offset ="868" ></Tag001021b0>
+	<Tag00180000 FieldName ="Group Length"  VRName ="UL"  Length ="4"  Offset ="876" >458</Tag00180000>
+	<Tag00180020 FieldName ="Scanning Sequence"  VRName ="CS"  Length ="2"  Offset ="888" >GR</Tag00180020>
+	<Tag00180021 FieldName ="Sequence Variant"  VRName ="CS"  Length ="6"  Offset ="898" >GR\SK</Tag00180021>
+	<Tag00180022 FieldName ="Scan Options"  VRName ="CS"  Length ="22"  Offset ="912" >FAST_GEMS\SEQ_GEMS\PFF</Tag00180022>
+	<Tag00180023 FieldName ="MR Acquisition Type"  VRName ="CS"  Length ="2"  Offset ="942" >2D</Tag00180023>
+	<Tag00180024 FieldName ="Sequence Name"  VRName ="SH"  Length ="4"  Offset ="952" >fgre</Tag00180024>
+	<Tag00180025 FieldName ="Angio Flag"  VRName ="CS"  Length ="2"  Offset ="964" >Y</Tag00180025>
+	<Tag00180050 FieldName ="Slice Thickness"  VRName ="DS"  Length ="8"  Offset ="974" >1.000000</Tag00180050>
+	<Tag00180080 FieldName ="Repetition Time"  VRName ="DS"  Length ="8"  Offset ="990" >7.300000</Tag00180080>
+	<Tag00180081 FieldName ="Echo Time"  VRName ="DS"  Length ="8"  Offset ="1006" >2.100000</Tag00180081>
+	<Tag00180083 FieldName ="Number of Averages"  VRName ="DS"  Length ="8"  Offset ="1022" >1.000000</Tag00180083>
+	<Tag00180084 FieldName ="Imaging Frequency"  VRName ="DS"  Length ="14"  Offset ="1038" >63.8733140000</Tag00180084>
+	<Tag00180085 FieldName ="Imaged Nucleus"  VRName ="SH"  Length ="2"  Offset ="1060" >H1</Tag00180085>
+	<Tag00180086 FieldName ="Echo Number(s)"  VRName ="IS"  Length ="2"  Offset ="1070" >1</Tag00180086>
+	<Tag00180087 FieldName ="Magnetic Field Strength"  VRName ="DS"  Length ="6"  Offset ="1080" >15000</Tag00180087>
+	<Tag00180088 FieldName ="Spacing Between Slices"  VRName ="DS"  Length ="8"  Offset ="1094" >1.000000</Tag00180088>
+	<Tag00180091 FieldName ="Echo Train Length"  VRName ="IS"  Length ="2"  Offset ="1110" >0</Tag00180091>
+	<Tag00180093 FieldName ="Percent Sampling"  VRName ="DS"  Length ="10"  Offset ="1120" >100.000000</Tag00180093>
+	<Tag00180094 FieldName ="Percent Phase Field of View"  VRName ="DS"  Length ="10"  Offset ="1138" >75.000000</Tag00180094>
+	<Tag00180095 FieldName ="Pixel Bandwidth"  VRName ="DS"  Length ="10"  Offset ="1156" >250.000000</Tag00180095>
+	<Tag00181020 FieldName ="Software Version(s)"  VRName ="LO"  Length ="2"  Offset ="1174" >01</Tag00181020>
+	<Tag00181050 FieldName ="Spatial Resolution"  VRName ="DS"  Length ="18"  Offset ="1184" >1.000000\1.000000</Tag00181050>
+	<Tag00181088 FieldName ="Heart Rate"  VRName ="IS"  Length ="2"  Offset ="1210" >0</Tag00181088>
+	<Tag00181090 FieldName ="Cardiac Number of Images"  VRName ="IS"  Length ="2"  Offset ="1220" >0</Tag00181090>
+	<Tag00181094 FieldName ="Trigger Window"  VRName ="IS"  Length ="2"  Offset ="1230" >0</Tag00181094>
+	<Tag00181100 FieldName ="Reconstruction Diameter"  VRName ="DS"  Length ="14"  Offset ="1240" >300.0000000000</Tag00181100>
+	<Tag00181250 FieldName ="Receiving Coil"  VRName ="SH"  Length ="6"  Offset ="1262" >TORSO</Tag00181250>
+	<Tag00181310 FieldName ="Acquisition Matrix"  VRName ="US"  Length ="2"  Offset ="1276" >12320</Tag00181310>
+	<Tag00181312 FieldName ="Phase Encoding Direction"  VRName ="CS"  Length ="4"  Offset ="1286" >COL</Tag00181312>
+	<Tag00181314 FieldName ="Flip Angle"  VRName ="DS"  Length ="2"  Offset ="1298" >60</Tag00181314>
+	<Tag00181315 FieldName ="Variable Flip Angle Flag"  VRName ="CS"  Length ="2"  Offset ="1308" >N</Tag00181315>
+	<Tag00181316 FieldName ="SAR"  VRName ="DS"  Length ="8"  Offset ="1318" >0.261090</Tag00181316>
+	<Tag00185100 FieldName ="Patient Position"  VRName ="CS"  Length ="4"  Offset ="1334" >FFS</Tag00185100>
+	<Tag00200000 FieldName ="Group Length"  VRName ="UL"  Length ="4"  Offset ="1346" >388</Tag00200000>
+	<Tag0020000d FieldName ="Study Instance UID"  VRName ="UI"  Length ="44"  Offset ="1358" >1.2.840.113619.2.1.37052.823612359.921871818</Tag0020000d>
+	<Tag0020000e FieldName ="Series Instance UID"  VRName ="UI"  Length ="74"  Offset ="1410" >1.2.826.0.1.3680043.2.105.651229.1.1.140.129.79.214.2002061716402348.75.1</Tag0020000e>
+	<Tag00200010 FieldName ="Study ID"  VRName ="SH"  Length ="6"  Offset ="1492" >37052</Tag00200010>
+	<Tag00200011 FieldName ="Series Number"  VRName ="IS"  Length ="2"  Offset ="1506" >75</Tag00200011>
+	<Tag00200012 FieldName ="Acquisition Number"  VRName ="IS"  Length ="2"  Offset ="1516" >75</Tag00200012>
+	<Tag00200013 FieldName ="Instance Number"  VRName ="IS"  Length ="2"  Offset ="1526" >73</Tag00200013>
+	<Tag00200032 FieldName ="Image Position (Patient)"  VRName ="DS"  Length ="34"  Offset ="1536" >25.000000\-140.000000\1516.000000</Tag00200032>
+	<Tag00200037 FieldName ="Image Orientation (Patient)"  VRName ="DS"  Length ="56"  Offset ="1578" >0.000000\1.000000\0.000000\0.000000\0.000000\ -1.000000</Tag00200037>
+	<Tag00200052 FieldName ="Frame of Reference UID"  VRName ="UI"  Length ="58"  Offset ="1642" >1.2.840.113619.2.1.37052.3338428854.1.921871820.1083036672</Tag00200052>
+	<Tag00200060 FieldName ="Laterality"  VRName ="CS"  Length ="0"  Offset ="1708" ></Tag00200060>
+	<Tag00201040 FieldName ="Position Reference Indicator"  VRName ="LO"  Length ="2"  Offset ="1716" >SN</Tag00201040>
+	<Tag00201041 FieldName ="Slice Location"  VRName ="DS"  Length ="12"  Offset ="1726" >1516.000000</Tag00201041>
+	<Tag00210000 FieldName ="Group Length"  VRName ="IS"  Length ="4"  Offset ="1746" ></Tag00210000>
+	<Tag00210010 FieldName ="?"  VRName ="IS"  Length ="2"  Offset ="1758" ></Tag00210010>
+	<Tag00280000 FieldName ="Group Length"  VRName ="UL"  Length ="4"  Offset ="1768" >116</Tag00280000>
+	<Tag00280002 FieldName ="Samples per Pixel"  VRName ="US"  Length ="2"  Offset ="1780" >1</Tag00280002>
+	<Tag00280004 FieldName ="Photometric Interpretation"  VRName ="CS"  Length ="12"  Offset ="1790" >MONOCHROME2</Tag00280004>
+	<Tag00280010 FieldName ="Rows"  VRName ="US"  Length ="2"  Offset ="1810" >256</Tag00280010>
+	<Tag00280011 FieldName ="Columns"  VRName ="US"  Length ="2"  Offset ="1820" >256</Tag00280011>
+	<Tag00280030 FieldName ="Pixel Spacing"  VRName ="DS"  Length ="18"  Offset ="1830" >1.000000\1.000000</Tag00280030>
+	<Tag00280100 FieldName ="Bits Allocated"  VRName ="US"  Length ="2"  Offset ="1856" >8</Tag00280100>
+	<Tag00280101 FieldName ="Bits Stored"  VRName ="US"  Length ="2"  Offset ="1866" >8</Tag00280101>
+	<Tag00280102 FieldName ="High Bit"  VRName ="US"  Length ="2"  Offset ="1876" >7</Tag00280102>
+	<Tag00280103 FieldName ="Pixel Representation"  VRName ="US"  Length ="2"  Offset ="1886" >1</Tag00280103>
+	<Tag7fe00000 FieldName ="Group Length"  VRName ="UL"  Length ="4"  Offset ="1896" >65544</Tag7fe00000>
+	<Tag7fe00010 FieldName ="PixelData"  VRName ="OW"  Length ="65536"  Offset ="1908" >0;0;0;0;0;0;0;0;0;0;0.....</Tag7fe00010>
+	</DDO>

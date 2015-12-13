@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Show DICOM image</title>
+ 
+<script type="text/javascript" >
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "Img/MR1.xml", false);
+    xhttp.send();
+    var xmlDoc = xhttp.responseXML;
+    var RowsStr = xmlDoc.getElementsByTagName("Tag00280010")[0].childNodes[0].nodeValue;
+    var Rows = parseInt(RowsStr);
+    var ColumnsStr = xmlDoc.getElementsByTagName("Tag00280011")[0].childNodes[0].nodeValue;
+    var Columns = parseInt(ColumnsStr);
+    var Atts = xmlDoc.getElementsByTagName("Tag7fe00010")[0].attributes;
+    var OffsetStr = Atts.getNamedItem("Offset").nodeValue;
+    var Offset = parseInt(OffsetStr);
+    var WindowCenter = 500;
+    var WindowWidth = 1000;
+    var dataview;
+    xhttp.open('GET', "Img/MR1.dcm", true);
+    xhttp.responseType = "arraybuffer"; 
+    xhttp.onreadystatechange = function () {
+        if (xhttp.readyState === 4) {
+           dataview = new DataView(xhttp.response);
+        }     
+    } 
+    xhttp.send();
+    
+    function ShowImg() {
+        var Max = WindowCenter + WindowWidth / 2;
+        var Min = WindowCenter - WindowWidth / 2;
+        var canvas = document.getElementById("Canvas");
+        var ctx = canvas.getContext("2d");
+ 
+        for (var i = 0; i < Rows; i++) {
+            var i1 = i * Rows;
+            for (var j = 0; j < Columns; j++) { 
+                Offset2 = Offset + 2 * (i1 + j);
+                var PixelValue = dataview.getUint16(Offset + 2 * (i1 + j), true); // true for littel endian
+                if (PixelValue >= Max) GrayValue = 255;
+                else if (Min > PixelValue) GrayValue = 0;
+                else GrayValue = Math.round((PixelValue - Min) / WindowWidth * 255);
+                ctx.fillStyle = "rgb(" + GrayValue + "," + GrayValue + "," + GrayValue + ")";
+                ctx.fillRect(j, i, 1, 1);
+            }
+        }
+
+    }
+
+    function Button1_onclick() {
+        WindowCenterStr = document.getElementById("Center").value;
+        WindowCenter = parseInt(WindowCenterStr);
+        WindowWidthStr = document.getElementById("Width").value;
+        WindowWidth = parseInt(WindowWidthStr);
+        ShowImg();
+    }
+
+
+
+</script>
+
+    <style type="text/css">
+        #Button1
+        {
+            height: 30px;
+            width: 76px;
+        }
+    </style>
+
+</head>
+<body>
+<br />
+WindowCenter:<input size="8" id="Center" value="500"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+WindowWidth: <input size="8" id="Width" value="1000"/>&nbsp;&nbsp;&nbsp;&nbsp;
+    <input id="Button1" type="button" value="button" onclick="return Button1_onclick()" /><br />
+<canvas style="background-color: black" id="Canvas" width="512" height="512" ></canvas>
+
+</body>
+</html>
